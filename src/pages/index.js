@@ -1,19 +1,18 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import SEO from '../components/seo';
-import HeroSlider from '../components/organisms/HeroSlider';
 import GlobalStyle from '../theme/GlobalStyle';
-import NewsSection from '../components/organisms/NewsSection';
-import MainTemplate from '../components/templates/MainTemplate';
+import { theme } from '../theme/MainTheme';
+import HeaderMenu from '../components/organisms/HeaderMenu/HeaderMenu';
 
 const IndexPage = () => (
-  <>
-    <SEO title="Site Task" />
-    <GlobalStyle />
-    <HeroSlider />
-    <MainTemplate>
-      <NewsSection />
-    </MainTemplate>
-  </>
+    <>
+        <SEO title="Site Task" />
+        <GlobalStyle />
+        <ThemeProvider theme={theme}>
+            <HeaderMenu />
+        </ThemeProvider>
+    </>
 );
 
 export default IndexPage;
