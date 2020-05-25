@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Site-task`,
+    title: `We help sell and deliver`,
     description: `Simple description`,
     author: `Michał Opałka`,
   },

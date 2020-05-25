@@ -18,8 +18,8 @@ const ButtonIcon = styled.button`
   }
 
   ${({ logo }) =>
-        logo &&
-        css`
+    logo &&
+    css`
          display: block;
          background-image: url(${({ icon }) => icon});
          background-repeat: no-repeat;
@@ -33,6 +33,10 @@ const ButtonIcon = styled.button`
          &:hover {
          background-color: transparent;
          }
+
+         @media (max-width: 768px) {
+          margin: 50px 0 10px;
+  }
       `}
 `;
 
