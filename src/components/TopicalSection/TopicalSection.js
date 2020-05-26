@@ -96,6 +96,7 @@ const StyledSubheader = styled(Subheader)`
 const StyledHeader = styled(Header)`
     margin: 0 0 60px 0;
     padding: 0;
+    text-align: left;
 
     @media (max-width: 768px) {
         order: 0;

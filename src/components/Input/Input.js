@@ -24,6 +24,11 @@ const Input = styled.input`
     max-width: 80%;
     margin-right: 0;
     margin-top: 20px;
+    font-size: 13px;
+
+    &::placeholder {
+    font-size: 13px;
+    }
   }
 `;
 

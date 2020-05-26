@@ -14,7 +14,7 @@ const Button = styled.button`
   transition: all 0.3s ease-in-out;
 
   :hover {
-    background-color: #6CDBF5;
+    background-color: ${({ basic }) => basic ? '#6CDBF5' : '#fff'};
     cursor: pointer;
   }
 

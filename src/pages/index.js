@@ -9,6 +9,7 @@ import MainTemplate from '../components/MainTemplate/MainTemplate';
 import CompanyList from '../components/CompanyList/CompanyList';
 import TopicalSection from '../components/TopicalSection/TopicalSection';
 import CaseStudies from '../components/CaseStudies/CaseStudies';
+import ContactSection from '../components/ContactSection/ContactSection';
 
 const IndexPage = () => (
     <>
@@ -16,11 +17,13 @@ const IndexPage = () => (
         <GlobalStyle />
         <ThemeProvider theme={theme}>
             <MainTemplate>
-                <NavMenu />
+                <NavMenu header />
                 <HeroImage />
                 <CompanyList />
                 <TopicalSection />
                 <CaseStudies />
+                <ContactSection />
+                <NavMenu />
             </MainTemplate>
         </ThemeProvider>
     </>

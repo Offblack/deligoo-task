@@ -11,7 +11,7 @@ const StyledWrapper = styled.div`
   width: calc(100% - 80px);
   height: 750px;
   border-radius: 20px;
-  margin: 30px 0 160px;
+  margin: 0 0 160px;
   background-color: rgb(240,249,254);
   background-color: linear-gradient(45deg, rgba(240,249,254,0) 0%, rgba(215,238,253,1) 100%);
   display: flex;

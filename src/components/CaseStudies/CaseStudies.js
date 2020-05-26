@@ -30,7 +30,7 @@ const StyledWrapper = styled.div`
   @media (max-width: 768px) {
     width: 95%;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 
     img {
         width: 100%;
@@ -45,6 +45,17 @@ const StyledSliderWrapper = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
+
+  @media (max-width: 768px) {
+    width: 95%;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+  }
 `;
 
 const StyledInnerWrapper = styled.div`
@@ -65,6 +76,7 @@ const StyledSubheader = styled(Subheader)`
 
     @media (max-width: 768px) {
         padding-left: 0;
+        margin-top: 0;
         margin-bottom: 10px;
     }
 `;
@@ -75,7 +87,6 @@ const StyledHeader = styled(Header)`
     align-self: flex-start;
 
     @media (max-width: 768px) {
-        order: 0;
         margin-bottom: 20px;
         padding-left: 0;
     }
@@ -97,7 +108,6 @@ const StyledLink = styled(Paragraph)`
     }
 `;
 
-
 const StyledParagraph = styled(Paragraph)`
     font-weight: 600;
     font-size: 12px;
@@ -106,7 +116,7 @@ const StyledParagraph = styled(Paragraph)`
     margin-bottom: 20px;
 
     @media (max-width: 768px) {
-    margin: 25px 0;
+    margin: 40px 0 20px 0;
   }
 `;
 
@@ -122,13 +132,25 @@ const StyledButtonIcon = styled(ButtonIcon)`
         css`
          left: 110px;
          transform: rotate(-180deg);
+
+         @media (max-width: 768px) {
+            left: 10%;
+         }
         `}
 
     ${({ right }) =>
         right &&
         css`
          right: 110px;
+
+         @media (max-width: 768px) {
+            right: 10%;
+         }
         `}
+
+   @media (max-width: 768px) {
+    bottom: -30px;
+   }
 `;
 
 
